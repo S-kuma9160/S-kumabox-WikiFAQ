@@ -1,0 +1,136 @@
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>日本語版ページ</title>
+    <style>
+        /* レイアウトの肝：Flexboxを使用 */
+        .container {
+            display: flex; /* 横並びにする */
+            min-height: 100vh; /* 画面いっぱいの高さ */
+        }
+
+        /* サイドバーのスタイル */
+        .sidebar {
+            width: 250px; /* 横幅 */
+            background-color: #f4f4f4;
+            padding: 20px;
+            border-right: 1px solid #ddd;
+        }
+
+        /* メインコンテンツのスタイル */
+        .main-content {
+            flex: 1; /* 残りの幅をすべて使う */
+            padding: 20px;
+        }
+
+        /* 箇条書きのスタイルを整える */
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+        }
+        .sidebar li {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- 左側のサイドバー -->
+        <aside class="sidebar">
+  <a href="S-kumabox JP.html" style="margin: 10px;">
+    <img src="D:\HTML\画像/Wiki_Tittle.png" alt="サイト1へ" style="width: 250px; height: auto; border: none;">
+  </a>
+            <h2>メニュー</h2>
+            <ul>
+                <li><a href="S-kumabox Wiki_Homepage.html">言語選択</a></li>
+                <li><a href="このサイトについて.html">サイト説明</a></li>
+                <li><a href="未完成.html">編集者の説明</a></li>
+                <li><a href="未完成.html">他のリンク</a></li>
+            </ul>
+        </aside>
+
+        <!-- 右側のメイン画面 -->
+        <main class="main-content">
+            <h1>ようこそ！S-kumabox Wiki JPへ！</h1>
+            <p>私が作ったIncrediboxModのOCのWikiです！</p>
+<div>
+  <!-- 1つ目の画像リンク（target="_blank"を削除） -->
+  <a href="Games page.html" style="margin: 10px;">
+    <img src="D:\HTML\画像/キャラ紹介.svg" alt="サイト1へ" style="width: 340px; height: auto; border: none;">
+  </a>
+
+</div>
+
+<div>
+  <!-- 2つ目の画像リンク（target="_blank"を削除） -->
+  <a href="最新バージョンのダウンロード.html" style="margin: 10px;">
+    <img src="D:\HTML\画像/最新バー.svg" alt="サイト1へ" style="width: 340px; height: auto; border: none;">
+  </a>
+
+<div>
+  <!-- 3つ目の画像リンク（target="_blank"を削除） -->
+  <a href="S-kumaboxのサウンドトラック.html" style="margin: 10px;">
+    <img src="D:\HTML\画像/サウンドトラック.svg" alt="サイト1へ" style="width: 340px; height: auto; border: none;">
+  </a>
+
+</div>
+
+<div>
+  <!-- 4つ目の画像リンク（target="_blank"を削除） -->
+  <a href="更新履歴.html" style="margin: 10px;">
+    <img src="D:\HTML\画像/更新履歴.svg" alt="サイト1へ" style="width: 340px; height: auto; border: none;">
+  </a>
+
+</div>
+
+
+        </main>
+    </div>
+
+</body>
+</html>
+
+<!-- 最下部の固定バー本体 -->
+<div class="bottom-info-bar">
+  2026 S-kumabox Official Wiki + FAQ / by <a href="https://s-kuma.itch.io/" class="bar-link">S-kuma</a>
+</div>
+
+<style>
+/* バー全体のスタイル */
+.bottom-info-bar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 40px;
+  background-color: #333333; /* バーの背景色（黒系） */
+  color: #ffffff;            /* リンク以外の通常文字の色（白） */
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 15px;
+  box-sizing: border-box;
+  z-index: 9999;
+}
+
+/* 🔗 リンク文字の最初の状態（赤色） */
+.bar-link {
+  color: #ff4d4d;             /* 最初は赤色（少し明るめで見やすい赤） */
+  text-decoration: underline; /* リンクと分かりやすいように下線をつける */
+  margin-left: 5px;
+  font-weight: bold;          /* 赤色を目立たせるために太字に設定 */
+}
+
+/* 🖱️ マウスが触れた（ホバーした）ときの状態（黄色） */
+.bar-link:hover {
+  color: #ffff00;            /* マウスが乗ったら黄色に変更 */
+  text-decoration: none;     /* マウスが乗ったときは下線を消す */
+}
+
+/* バーが被ってページ最下部が見えなくなるのを防ぐ設定 */
+body {
+  padding-bottom: 40px; 
+}
+</style>
